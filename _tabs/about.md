@@ -31,3 +31,7 @@ Iñaki is an undergraduate student in Telecommunications Engineering on his way 
 
 ### Miguel Angel "[xtylez](/tags/xtylez/)" (xtylez@scavengersecurity.com) ###
 Miguel Angel is a Telecommunications Engineer currently working as Systems Administrator. Other interests include cryptography and binary explotation.
+
+### Javi "[jartigag](/tags/jartigag/)" (jartigag@scavengersecurity.com) ###
+Javi studied Telecoms. Engineering, worked as an Observability Analyst at Naudit HPCN and now he works as a Threat Hunting Analyst at CSA.
+He usually addresses the "Misc" category, so interests are pretty varied.
