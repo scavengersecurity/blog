@@ -7,9 +7,6 @@ date: 2023-02-12 22:00:00 +0100
 author: ikerl
 ---
 
-
-# queue up! - LaCTF 2023
-
 queue up! is a web challenge in LaCTF 2023 that ended with XX solves. The goal is to retrieve a flag that is sent by a web application when the queue goes down and the timer reaches zero. However, with over 20,000 users waiting for the flag, the estimated time to win is about 80+ days (with only one flag being sent every 5 minutes).
 
 ```
