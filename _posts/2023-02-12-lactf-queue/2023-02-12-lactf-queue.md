@@ -127,10 +127,9 @@ Content-Length: 366
 
 uuid[]=70964ab7-1025-4f86-a378-ab3b737bed3a/bypass?&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a
 ```
-This payload will meet the condition of being 36 in length and will bypass character validation because it is not a string. This will retrieve the flag. When constructing the `requestUrl` the 36 components of the array will be concatenated one after the other using commas so that the following `requestUrl` will result: `http://queue:${process.env.QUEUE_SERVER_PORT}/api/${uuid}/bypass?/status,a,a,a,a,a,a,a,a,a,a,a,a,a,a....`.
+This payload will meet the condition of being 36 in length (in this case 36 elements in the array instead of 36 characters) and will bypass character validation because it is not a string. When constructing the `requestUrl` the 36 elements of the array will be concatenated one after the other using commas so that the following `requestUrl` will result: `http://queue:${process.env.QUEUE_SERVER_PORT}/api/${uuid}/bypass?/status,a,a,a,a,a,a,a,a,a,a,a,a,a,a....`.
 
 This way we will exploit the SSRF vulnerability in the flag server and have our uuid bypassed, thus obtaining the flag without having to wait in the queue.
-
 
 ![](flag.png)
 
