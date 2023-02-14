@@ -113,7 +113,7 @@ app.post("/", async function (req, res) {
 
 There is a critical vulnerability in the checks performed by the flag server. By using arrays, it is possible to bypass both checks and modify the server's request (SSRF) to bypass the user's position in the queue.
 
-The exploit used during this challenge involves sending a POST request to the `/` endpoint of the flag server with the uuid as a POST parameter in the body. This will retrieve the flag.
+The exploit used during this challenge involves sending a POST request to the `/` endpoint of the flag server with the uuid as a POST parameter in the body. 
 
 ```
 POST / HTTP/1.1
@@ -127,6 +127,10 @@ Content-Length: 366
 
 uuid[]=70964ab7-1025-4f86-a378-ab3b737bed3a/bypass?&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a&uuid[]=a
 ```
+This payload will meet the condition of being 36 in length and will bypass character validation because it is not a string. This will retrieve the flag. When constructing the `requestUrl` the 36 components of the array will be concatenated one after the other using commas so that the following `requestUrl` will result: `http://queue:${process.env.QUEUE_SERVER_PORT}/api/${uuid}/bypass?/status,a,a,a,a,a,a,a,a,a,a,a,a,a,a....`.
+
+This way we will exploit the SSRF vulnerability in the flag server and have our uuid bypassed, thus obtaining the flag without having to wait in the queue.
+
 
 ![](flag.png)
 
