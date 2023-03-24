@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB Cyber Apocalypse CTF 2023- Artifacts of Dangerous Sightings [Forensics]"
+title: "HTB Cyber Apocalypse CTF 2023- Artifacts of Dangerous Sightings [Forensic]"
 categories: ctf
 tags: fore blast_o mz4b
 date: 2023-03-24 10:00:00 +0100
