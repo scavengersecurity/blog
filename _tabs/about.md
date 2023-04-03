@@ -26,9 +26,6 @@ Miguel Angel is a Telecommunications Engineer currently working as Systems Admin
 ### Alex "[r1p](/tags/r1p/)" (admin@alex.sc) ####
 Alex works as a red teamer and pentester at [redacted], holds several IT-related certifications, including the OSCP, OSCE and an HND in Computer Network Systems Administration. Other interests include web application pentesting, binary exploitation and cryptography.
 
-### Maite "[0xKn](/tags/0xKn/)" (admin@maite.sc) ####
-Maite is in her final year at university studying Bsc (Hons) Cyber Security Management. She also holds a HND in Development of Web Applications. She is interested in many fields of cybersecurity but is currently focusing on web application penetration testing.
-
 <br>
 
 ### Collaborators - Occasional Contributors ###
@@ -39,3 +36,6 @@ Iñaki is an undergraduate student in Telecommunications Engineering on his way 
 ### Javi "[jartigag](/tags/jartigag/)" (jartigag@scavengersecurity.com) ###
 Javi studied Telecoms. Engineering, worked as an Observability Analyst at Naudit HPCN and now he works as a Threat Hunting Analyst at CSA.
 He usually addresses the "Misc" category, so interests are pretty varied.
+
+### Maite "[0xKn](/tags/0xKn/)" (admin@maite.sc) ####
+Maite is in her final year at university studying Bsc (Hons) Cyber Security Management. She also holds a HND in Development of Web Applications. She is interested in many fields of cybersecurity but is currently focusing on web application penetration testing.
