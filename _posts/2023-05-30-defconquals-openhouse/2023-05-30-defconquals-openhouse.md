@@ -7,7 +7,7 @@ date: 2023-05-30 8:00:00 +0100
 author: ikerl
 ---
 
-his year, we participated in DEF CON Quals CTF as members of the Quanterland team. We spent the entire weekend working diligently on an open-house binary exploitation challenge, which had 68 solves. 
+This year, we participated in DEF CON Quals CTF as members of the Quanterland team. We spent the entire weekend working diligently on an open-house binary exploitation challenge, which had 68 solves. 
 
 This particular challenge proved to be quite challenging and frustrating for me. However, we also gained valuable knowledge and insights, motivating us to write a write-up documenting my newfound understanding.
 
