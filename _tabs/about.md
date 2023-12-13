@@ -12,7 +12,7 @@ Scavenger Security is a Spanish CTF team founded during November 2020.
 Carlos works as a Security Engineer at a Linux distribution vendor. Interests include low level software security, virtualization, reverse engineering and performance.
 
 ### Iker "[ikerl](/tags/ikerl/)" (iker@scavengersecurity.com) ####
-Iker works as a red teamer at Incide Digital SL. Other interests include web application pentesting, binary explotation and malware analysis.
+Iker works as a red team operator. Other interests include web application pentesting, binary explotation and malware analysis.
 
 ### Pablo "[blast_o](/tags/blast-o/)" (blast_o@scavengersecurity.com) ###
 Pablo works as an Observability Manager at Naudit HPCN. Interests include forensics and log analysis, steganography and web application pentesting.
