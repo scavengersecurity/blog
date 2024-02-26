@@ -3,7 +3,7 @@ layout: post
 title: "bi0sCTF 2024 - Image Gallery I [Web]"
 categories: ctf
 tags: ikerl ctf web cache
-date: 2024-02-26 10:00:00 +0100
+date: 2024-02-26 9:30:00 +0100
 author: ikerl
 ---
 
