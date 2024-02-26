@@ -17,7 +17,7 @@ When examining the source code, we found several key functions with different pa
 
 In the root path, the application requests the `sid` cookie, which serves as the identifier for the user session. If this cookie does not exist, does not comply with the uuid format or there is no folder with that name, a new `sid` is generated and a directory is created to store the user's files. On the other hand, if all these conditions are met, a dashboard listing the user's files is loaded. This means that we need to know a `sid` value in order to access their files and we will have to compromise the `sid` stored in the bot's cookie in order to get the flag.
 
-```node
+```javascript
 app.get('/', async (req, res) => {
 
   if (req.cookies.sid && /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/.test(req.cookies.sid)) {
@@ -42,7 +42,7 @@ app.get('/', async (req, res) => {
 
 This endpoint allows users to upload files to their private directory. The application uses the `sid` cookie to determine the corresponding directory for each user. If the `sid` cookie does not exist or references a non-existent directory it will return an error.
 
-```node
+```javascript
 app.post('/upload', async (req, res) => {
 
   if (!req.files || !req.cookies.sid) {
@@ -67,7 +67,7 @@ app.post('/upload', async (req, res) => {
 
 This functionality forces the admin bot to visit the index page and view an image that has been shared with it. First, the bot opens the browser at the index of the web application (where its files are listed) and then loads the image shared with it using the parameter `?f`.
 
-```node
+```javascript
 app.post('/share', async (req, res) => {
 
   let id = req.body.id
@@ -80,7 +80,7 @@ app.post('/share', async (req, res) => {
 
 The `visit` function opens a Google Chrome instance to the index page, and these are the steps executed by the bot:
 
-```node
+```javascript
 page = await browser.newPage();
 
 await page.goto(`http://localhost:3000/`);
