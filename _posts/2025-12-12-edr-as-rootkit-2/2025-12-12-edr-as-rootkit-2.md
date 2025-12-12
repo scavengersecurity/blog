@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "EDR as a rootkit 2: Full LPE <= v2.5.1.0"
+title: "EDR as a rootkit 2: Full LPE - OpenEDR <= v2.5.1.0"
 categories: research
 tags: ikerl research pwn openedr lpe
 date: 2025-12-12 13:03:00 +0100
@@ -321,5 +321,6 @@ These are the aspects that should be patched by the manufacturer:
 - Implement integrity checks during DLL loading (reported in the previous post).
 
 The complete exploit is available in the following repository:
+
 
 [https://gist.github.com/ikerl/c3ec81f12ded44c2e0ae2dfdacb562ba](https://gist.github.com/ikerl/c3ec81f12ded44c2e0ae2dfdacb562ba)
