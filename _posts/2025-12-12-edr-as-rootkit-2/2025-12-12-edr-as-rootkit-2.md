@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "EDR as a rootkit 2: Full LPE - OpenEDR <= v2.5.1.0"
+title: "EDR as a rootkit 2: LPE - OpenEDR <= v2.5.1.0"
 categories: research
 tags: ikerl research pwn openedr lpe
 date: 2025-12-12 13:03:00 +0100
@@ -264,7 +264,7 @@ enum class FieldType : uint8_t
 
 ## Modifying the Injected DLL Path for LPE
 
-The most interesting parameter is “InjectedDll,” which allows you to modify the DLL used by the driver injector to load it into the processes being monitored. If we manage to redirect this configuration to a DLL located in a path controlled by non-privileged users, the EDR will start injecting this dynamic library into the new processes that are created and, as soon as it is injected into a privileged process, it will result in a privilege escalation vector.
+The most interesting parameter is `InjectedDll,` which allows you to modify the DLL used by the driver injector to load it into the processes being monitored. If we manage to redirect this configuration to a DLL located in a path controlled by non-privileged users, the EDR will start injecting this dynamic library into the new processes that are created and, as soon as it is injected into a privileged process, it will result in a privilege escalation vector.
 
 Unfortunately, modifying the DLL path is not easy due to several checks performed by the “addSystemDll” function during the configuration of new injection DLLs:
 
@@ -312,7 +312,7 @@ In the following screenshot, we can see that the driver has loaded our malicious
 
 # Conclusions
 
-In the first post, “EDR as a rootkit,” I demonstrated that loading a DLL file without validating its integrity was a poor security practice. By combining this with newly identified vulnerabilities, it has been possible to build a complete exploit chain that allows privilege escalation on any system where OpenEDR is installed.
+In the first post, `EDR as a rootkit,` I demonstrated that loading a DLL file without validating its integrity was a poor security practice. By combining this with newly identified vulnerabilities, it has been possible to build a complete exploit chain that allows privilege escalation on any system where OpenEDR is installed.
 
 These are the aspects that should be patched by the manufacturer:
 
@@ -324,3 +324,4 @@ The complete exploit is available in the following repository:
 
 
 [https://gist.github.com/ikerl/c3ec81f12ded44c2e0ae2dfdacb562ba](https://gist.github.com/ikerl/c3ec81f12ded44c2e0ae2dfdacb562ba)
+
