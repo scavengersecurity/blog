@@ -7,6 +7,13 @@ date: 2025-12-12 13:03:00 +0100
 author: ikerl
 ---
 
+### CVE Information
+
+This research resulted in the disclosure of two critical vulnerabilities:
+
+- **[CVE-2025-69783](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-69783)**: Self-Defense Bypass via Process Name Spoofing
+- **[CVE-2025-69784](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-69784)**: Privilege Escalation via DLL Injection Path Modification
+
 ## Introduction
 
 Last year, I spent some time experimenting with the open-source security tool OpenEDR, and during that process, I identified several poor security practices that could allow an attacker to misuse the EDR itself as if it were a rootkit.
@@ -324,4 +331,5 @@ The complete exploit is available in the following repository:
 
 
 [https://gist.github.com/ikerl/c3ec81f12ded44c2e0ae2dfdacb562ba](https://gist.github.com/ikerl/c3ec81f12ded44c2e0ae2dfdacb562ba)
+
 
