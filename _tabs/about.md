@@ -8,8 +8,10 @@ Scavenger Security, a Spanish CTF team founded in November 2020, is dedicated to
 
 ## Team members ##
 
-#### Carlos "[00xc](/tags/00xc/)" (00xc@protonmail.com) ####
-Carlos works as a Security Engineer at a Linux distribution vendor. Interests include low level software security, virtualization, reverse engineering and performance.
+#### Carlos "[00xc](/tags/00xc/)" (00xc@scavengersecurity.com) ####
+Carlos works as a Kernel & Virtualization Software Engineer at a Linux
+distribution vendor. Interests include low level software security,
+virtualization, reverse engineering and performance.
 
 ### Iker "[ikerl](/tags/ikerl/)" (iker@scavengersecurity.com) ####
 Iker works as a Red Team Operator. Other interests include web application pentesting, binary explotation and malware analysis.
